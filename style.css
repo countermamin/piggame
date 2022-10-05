@@ -194,7 +194,10 @@ main {
   .btn--hold {
     top: 40rem;
   }
-    .name {
+  .name {
     font-size: 3rem;
+  }
+  .dice {
+    top: 5.5rem;
   }
 }
