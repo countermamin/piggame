@@ -38,11 +38,13 @@ initGame();
 const timeOutBtn = function () {
   btnRoll.removeAttribute('disabled', '');
   btnRoll.style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
+  btnRoll.style.color = '#444';
 };
 
 function switchActivePlayer() {
   btnRoll.setAttribute('disabled', '');
   btnRoll.style.backgroundColor = 'rgb(0, 0, 0)';
+  btnRoll.style.color = 'rgba(255, 255, 255)';
   setTimeout(timeOutBtn, 2000);
   currentScore = 0;
   document.querySelector(`#current--${activePlayer}`).textContent =
