@@ -35,7 +35,13 @@ const initGame = function () {
 
 initGame();
 
+const timeOutBtn = function () {
+  btnRoll.removeAttribute('disabled', '');
+};
+
 function switchActivePlayer() {
+  btnRoll.setAttribute('disabled', '');
+  setTimeout(timeOutBtn, 2000);
   currentScore = 0;
   document.querySelector(`#current--${activePlayer}`).textContent =
     currentScore;
