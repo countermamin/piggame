@@ -194,4 +194,7 @@ main {
   .btn--hold {
     top: 40rem;
   }
+    .name {
+    font-size: 3rem;
+  }
 }
